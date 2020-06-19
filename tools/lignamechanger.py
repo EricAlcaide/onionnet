@@ -173,7 +173,7 @@ def lig_name_change(lig_in, lig_out, lig_code):
     return None
 
 def main():
-    if len(sys.argv) <= 3:
+    if len(sys.argv) < 3:
         print("""Usage: \npython ligandnamechanger.py old_ligand.pdb new_ligand.pdb""")
         sys.exit(0)
     lig = sys.argv[1]
